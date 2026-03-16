@@ -17,6 +17,8 @@ export const loginAdmin = async (req, res) => {
       })
     }
 
+  
+
     const isMatch = await bcrypt.compare(password, admin.password);
 
     if (!isMatch) {
