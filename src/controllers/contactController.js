@@ -4,14 +4,15 @@ export const createContact = async(req,res)=>{
 
   try{
 
-    const {name,email,phone,business,message} = req.body;
+    const {name,email,phone,business,message,source} = req.body;
 
     const contact = await Contact.create({
       name,
       email,
       phone,
       business,
-      message
+      message,
+      source : source || "contact_page"
     });
 
     res.status(201).json({
