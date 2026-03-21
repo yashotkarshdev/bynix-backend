@@ -4,7 +4,10 @@ import app from './src/app.js';
 import connectDB from './src/config/db.js';
 
 dotenv.config();
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:5175', // ya 5173 (Vite)
+  credentials: true
+}));
 
 connectDB();
 
