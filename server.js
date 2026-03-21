@@ -5,7 +5,7 @@ import connectDB from './src/config/db.js';
 
 dotenv.config();
 app.use(cors({
-  origin: 'http://localhost:5175', // ya 5173 (Vite)
+  origin: '*',
   credentials: true
 }));
 
