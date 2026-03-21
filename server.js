@@ -5,8 +5,7 @@ import connectDB from './src/config/db.js';
 
 dotenv.config();
 app.use(cors({
-  origin: '*',
-  credentials: true
+  origin: '*'
 }));
 
 connectDB();
