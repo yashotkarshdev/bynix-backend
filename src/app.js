@@ -8,7 +8,7 @@ import contactRoutes from "./routes/contactRoutes.js"
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: ["https://bynixtechnology.com","https://admin.bynixtechnology.com"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
